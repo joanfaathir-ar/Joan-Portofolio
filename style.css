@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #9edfff;
+}
+
+#gradient-1 {
+  background: linear-gradient(
+    115deg,
+    rgba(158, 223, 255, 1) 40%,
+    rgba(255, 251, 141, 1) 100%
+  );
+  height: 650px;
+}
+/* Navbar */
+#nav-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+/* Hero */
+#profile-hero {
+  width: 90px;
+  margin-right: -40px;
+  z-index: 1;
+}
+
+#profile-btn {
+  margin-top: 50px;
+  z-index: 0;
+  margin-bottom: 10px;
+}
+
+.btn-hero {
+  border-radius: 28px;
+  font-weight: bold;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 2px 3px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff !important;
+}
+
+/* About */
+#gradient-2 {
+  background: linear-gradient(
+    25deg,
+    rgba(158, 223, 255, 1) 40%,
+    rgba(255, 251, 141, 1)140%
+  );
+}
+
+.marquee {
+  background: #000000;
+}
+
+.marquee-content {
+  overflow: clip;
+}
+
+.marquee-text-track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: marquee-move-text 20s linear infinite;
+}
+
+.marquee-content p {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 10px;
+  padding: 0 1rem;
+}
+
+.fadeout-horizontal {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5rem,
+    black calc(100% - 5rem),
+    transparent
+  );
+}
+
+.about-container {
+  background-image: url(./public/svg/dot\ decoration.svg);
+  padding: 30px 0px;
+}
+
+.about {
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.about-text{
+    margin-right: -80px;
+}
+
+#about-title {
+  max-width: fit-content;
+  font-size: 64px;
+  font-weight: bold;
+  border: 20px;
+  border-bottom: 4px solid black;
+  margin-bottom: 40px;
+}
+
+/* Project */
+.flag-project {
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#flag-text1 {
+  width: 50%;
+  height: fit-content;
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+#flag-text2 {
+  width: 50%;
+  height: fit-content;
+  background-color: #000000;
+  text-align: center;
+  margin-top: 65px;
+  padding: 10px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin: 140px 0px;
+}
+
+.project-content {
+  display: inline;
+  justify-content: start;
+}
+
+.project-img {
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.btn-project button {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-style: none;
+  border-radius: 500px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Contact */
+#last-gradient{
+  background: rgb(255,251,141);
+  background: linear-gradient(35deg, rgba(255,251,141,1) 0%, rgba(255,251,141,0) 51%) !important;
+}
+
+#contact-title{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+#contact-body-title{
+  max-width: 700px;
+}
+
+.contact{
+  background-image: url(./public/svg/dot_decoration2.svg) !important;
+  margin-bottom: 70px;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content a{
+  text-decoration: none;
+}
+
+.contact-content button{
+  display: flex;
+  min-width: 350px;
+  align-items: center;
+  margin: 20px 5px 0px 5px;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  border-style: none;
+  
+  border-radius: 28px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+.contact-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.contact-text{
+  margin-left: 25px;
+}
+
+.contact-text-title{
+  font-weight: bold;
+}
+
+/* Footer */
+.cat-footer{
+  margin-bottom: -15px;
+}
+
+footer{
+  width: 100%;
+  background-color: #000000;
+}
+
+.footer-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background-color: #0000ff;
+}
+
+@keyframes marquee-move-text {
+  to {
+    transform: translateX(-50%);
+  }
+}
